@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add a Vehicle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>Add a Vehicle</h1>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">People search</a></li>
+          <li><a href="vehicle.html">Vehicle search</a></li>
+          <li><a href="add-vehicle.html">Add a vehicle</a></li>
+        </ul>
+      </nav>
+      <button id="reset" type="button">Reset</button>
+    </header>
+
+    <aside>
+      <img src="images/database.png" alt="Database icon">
+    </aside>
+
+    <main>
+      <form id="add-vehicle-form">
+        <p><label for="rego">Registration number</label><input id="rego" type="text"></p>
+        <p><label for="make">Make</label><input id="make" type="text"></p>
+        <p><label for="model">Model</label><input id="model" type="text"></p>
+        <p><label for="colour">Colour</label><input id="colour" type="text"></p>
+        <p><label for="owner">Owner name</label><input id="owner" type="text" autocomplete="name"></p>
+        <button id="check-owner" type="button" disabled>Check owner</button>
+      </form>
+
+      <p id="message-owner" aria-live="polite"></p>
+      <section id="owner-results" aria-label="Owner results"></section>
+      <button id="new-owner" type="button" disabled>New owner</button>
+
+      <form id="owner-form" hidden>
+        <h2>New owner details</h2>
+        <p><label for="name">Name</label><input id="name" type="text" autocomplete="name"></p>
+        <p><label for="address">Address</label><input id="address" type="text" autocomplete="street-address"></p>
+        <p><label for="dob">Date of birth</label><input id="dob" type="date"></p>
+        <p><label for="license">License number</label><input id="license" type="text"></p>
+        <p><label for="expire">License expiry date</label><input id="expire" type="date"></p>
+        <button type="submit">Add owner</button>
+      </form>
+
+      <p id="message-vehicle" aria-live="polite"></p>
+      <button id="add-vehicle" type="button">Add vehicle</button>
+    </main>
+
+    <footer>
+      <p>This is a sample for the COMP1004 coursework.</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
