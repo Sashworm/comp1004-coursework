@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="120" viewBox="0 0 160 120" role="img" aria-labelledby="title desc">
+<title id="title">Database icon</title><desc id="desc">A simple database cylinder image</desc>
+<ellipse cx="80" cy="25" rx="55" ry="18" fill="white" stroke="black"/>
+<path d="M25 25v60c0 10 25 18 55 18s55-8 55-18V25" fill="white" stroke="black"/>
+<path d="M25 55c0 10 25 18 55 18s55-8 55-18" fill="none" stroke="black"/>
+<path d="M25 85c0 10 25 18 55 18s55-8 55-18" fill="none" stroke="black"/>
+</svg>
